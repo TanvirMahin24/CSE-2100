@@ -6,14 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Processor extends AppCompatActivity {
+public class Motherboard extends AppCompatActivity {
     public void back(View view){
-        Intent intent = new Intent(getApplicationContext(),InputOutputCpu.class);
+        Intent intent = new Intent(getApplicationContext(),OtherImportentComponent.class);
         startActivity(intent);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_processor);
+        setContentView(R.layout.activity_motherboard);
     }
 }

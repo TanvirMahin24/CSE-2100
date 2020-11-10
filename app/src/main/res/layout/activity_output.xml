@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OtherImportentComponent">
-
+    tools:context=".Output">
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/button13"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -16,42 +15,20 @@
         android:background="#1A94C9"
         android:onClick="back"
         android:text="@string/back"
-        android:textColor="#FFFFFF"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="monospace"
-        android:text="@string/other_importent_component_of_computer"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:columnCount="2"
-        app:layout_constraintBottom_toTopOf="@+id/button22"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:rowCount="2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button8"
@@ -59,46 +36,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="#1A94C9"
-            android:onClick="motherboard"
+            android:onClick="monitor"
             android:shadowDx="10"
             android:shadowDy="10"
             android:shadowRadius="60"
-            android:text="@string/mainboard_text"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="#1A94C9"
-            android:onClick="powerSupply"
-            android:shadowDx="10"
-            android:shadowDy="10"
-            android:shadowRadius="60"
-            android:text="@string/power_supply"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="#1A94C9"
-            android:onClick="gpu"
-            android:shadowDx="10"
-            android:shadowDy="10"
-            android:shadowRadius="60"
-            android:text="@string/graphics_ncard"
+            android:text="@string/monitor_text"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_columnWeight="1"
@@ -107,21 +49,37 @@
 
         <Button
             android:id="@+id/button12"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="#1A94C9"
-            android:onClick="fan"
+            android:onClick="printer"
             android:shadowDx="10"
             android:shadowDy="10"
             android:shadowRadius="60"
-            android:text="@string/fan_title"
+            android:text="@string/printer_text"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_rowWeight="1" />
 
-    </androidx.gridlayout.widget.GridLayout>
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#1A94C9"
+            android:onClick="soundbox"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="60"
+            android:text="@string/soundbox_text"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

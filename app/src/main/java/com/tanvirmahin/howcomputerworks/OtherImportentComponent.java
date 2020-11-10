@@ -15,6 +15,16 @@ public class OtherImportentComponent extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),PowerSupply.class);
         startActivity(intent);
     }
+    public void motherboard(View view){
+        Intent intent = new Intent(getApplicationContext(),Motherboard.class);
+        startActivity(intent);
+    }public void fan(View view){
+        Intent intent = new Intent(getApplicationContext(),Fan.class);
+        startActivity(intent);
+    }public void gpu(View view){
+        Intent intent = new Intent(getApplicationContext(),Gpu.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

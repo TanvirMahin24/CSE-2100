@@ -6,23 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Storage extends AppCompatActivity {
-    public void ram(View view){
-        Intent intent = new Intent(getApplicationContext(),Ram.class);
+public class Output extends AppCompatActivity {
+    public void monitor(View view){
+        Intent intent = new Intent(getApplicationContext(),Monitor.class);
         startActivity(intent);
     }
-    public void hdd(View view){
-        Intent intent = new Intent(getApplicationContext(),Hdd.class);
+    public void soundbox(View view){
+        Intent intent = new Intent(getApplicationContext(),Soundbox.class);
         startActivity(intent);
     }
-    public void phdd(View view){
-        Intent intent = new Intent(getApplicationContext(),PHdd.class);
-        startActivity(intent);
-    }public void ssd(View view){
-        Intent intent = new Intent(getApplicationContext(),Ssd.class);
+    public void printer(View view){
+        Intent intent = new Intent(getApplicationContext(),Printer.class);
         startActivity(intent);
     }
-
     public void back(View view){
         Intent intent = new Intent(getApplicationContext(),InputOutputCpu.class);
         startActivity(intent);
@@ -30,6 +26,6 @@ public class Storage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_storage);
+        setContentView(R.layout.activity_output);
     }
 }

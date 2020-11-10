@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Mouce"></activity>
+        <activity android:name=".Fan"></activity>
+        <activity android:name=".Gpu" />
+        <activity android:name=".Motherboard" />
+        <activity android:name=".Soundbox" />
+        <activity android:name=".Printer" />
+        <activity android:name=".Monitor" />
+        <activity android:name=".Output" />
+        <activity android:name=".Ssd" />
+        <activity android:name=".Mouce" />
         <activity android:name=".Touchpad" />
         <activity android:name=".Keyboard" />
         <activity android:name=".PowerSupply" />

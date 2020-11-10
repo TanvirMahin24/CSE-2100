@@ -11,8 +11,16 @@ public class InputOutputCpu extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),Input.class);
         startActivity(intent);
     }
+    public void output(View view){
+        Intent intent = new Intent(getApplicationContext(),Output.class);
+        startActivity(intent);
+    }
     public void storage(View view){
         Intent intent = new Intent(getApplicationContext(),Storage.class);
+        startActivity(intent);
+    }
+    public void processor(View view){
+        Intent intent = new Intent(getApplicationContext(),Processor.class);
         startActivity(intent);
     }
     public void next(View view){
